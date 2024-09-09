@@ -1,0 +1,15 @@
+_core:
+  default_config_hash: ijfbzDTN4CbE7Sr-6ubWzy_t1vH4OtU1doNCLssVz-4
+langcode: en
+uuid: 168edc94-8795-43b4-b6c1-d5d9723d5369
+name: 'Shopping Platform'
+mail: akul.saxenaa@gmail.com
+slogan: ''
+page:
+  403: /node/24
+  404: /node/25
+  front: /node
+admin_compact_mode: false
+weight_select_max: 100
+default_langcode: en
+mail_notification: null

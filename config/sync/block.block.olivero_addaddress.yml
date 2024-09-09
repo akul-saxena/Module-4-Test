@@ -1,0 +1,25 @@
+uuid: bd426a02-b777-4a30-8167-61fac953e86a
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.add-address
+  module:
+    - system
+  theme:
+    - olivero
+id: olivero_addaddress
+theme: olivero
+region: secondary_menu
+weight: 0
+provider: null
+plugin: 'system_menu_block:add-address'
+settings:
+  id: 'system_menu_block:add-address'
+  label: 'Add Address'
+  label_display: visible
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

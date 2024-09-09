@@ -1,0 +1,23 @@
+uuid: ba23aaa7-ebed-4bf2-8d90-0c960f1f7051
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.product
+  module:
+    - node
+    - toolbar
+id: content_admin
+label: 'Content Admin'
+weight: 5
+is_admin: null
+permissions:
+  - 'access toolbar'
+  - 'create product content'
+  - 'delete any product content'
+  - 'delete own product content'
+  - 'delete product revisions'
+  - 'edit any product content'
+  - 'edit own product content'
+  - 'revert product revisions'
+  - 'view product revisions'

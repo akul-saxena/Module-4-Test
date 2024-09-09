@@ -1,0 +1,5 @@
+name: 'custom_cart'
+type: module
+description: 'CustomCart'
+package: Custom
+core_version_requirement: ^10 || ^11

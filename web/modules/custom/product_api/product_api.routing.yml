@@ -1,0 +1,7 @@
+product_api.products:
+  path: '/api/products'
+  defaults:
+    _controller: '\Drupal\product_api\Controller\ProductApiController::getProducts'
+    _title: 'Products API'
+  requirements:
+    _permission: 'access content'

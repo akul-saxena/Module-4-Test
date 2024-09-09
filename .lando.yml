@@ -1,0 +1,4 @@
+name: drupal-exam
+recipe: drupal10
+config:
+  webroot: web

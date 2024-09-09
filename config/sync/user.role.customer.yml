@@ -1,0 +1,20 @@
+uuid: 5ec7d36e-008c-40a8-ae87-b31f37cdb3b9
+langcode: en
+status: true
+dependencies:
+  module:
+    - buy_now
+    - comment
+    - custom_cart
+    - system
+    - taxonomy
+id: customer
+label: Customer
+weight: 4
+is_admin: null
+permissions:
+  - 'access buy now page'
+  - 'access comments'
+  - 'access content'
+  - 'access custom cart page'
+  - 'view vocabulary labels'

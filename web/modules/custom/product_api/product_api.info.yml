@@ -1,0 +1,10 @@
+name: 'Product API'
+type: module
+description: 'Exposes product information via a public API.'
+package: Custom
+core_version_requirement: ^10
+dependencies:  
+  - node  
+  - field  
+  - rest
+version: 1.0
