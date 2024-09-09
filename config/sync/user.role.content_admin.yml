@@ -6,11 +6,13 @@ dependencies:
     - node.type.product
   module:
     - node
+    - toolbar
 id: content_admin
 label: 'Content Admin'
 weight: 5
 is_admin: null
 permissions:
+  - 'access toolbar'
   - 'create product content'
   - 'delete any product content'
   - 'delete own product content'
