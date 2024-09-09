@@ -1,0 +1,18 @@
+uuid: 5ec7d36e-008c-40a8-ae87-b31f37cdb3b9
+langcode: en
+status: true
+dependencies:
+  module:
+    - buy_product
+    - comment
+    - system
+    - taxonomy
+id: customer
+label: Customer
+weight: 4
+is_admin: null
+permissions:
+  - 'access comments'
+  - 'access content'
+  - 'buy product'
+  - 'view vocabulary labels'
