@@ -3,8 +3,9 @@ langcode: en
 status: true
 dependencies:
   module:
-    - buy_product
+    - buy_now
     - comment
+    - custom_cart
     - system
     - taxonomy
 id: customer
@@ -12,7 +13,8 @@ label: Customer
 weight: 4
 is_admin: null
 permissions:
+  - 'access buy now page'
   - 'access comments'
   - 'access content'
-  - 'buy product'
+  - 'access custom cart page'
   - 'view vocabulary labels'

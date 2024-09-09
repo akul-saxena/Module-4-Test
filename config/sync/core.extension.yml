@@ -7,12 +7,13 @@ module:
   block: 0
   block_content: 0
   breakpoint: 0
-  buy_product: 0
+  buy_now: 0
   ckeditor5: 0
   comment: 0
   config: 0
   contact: 0
   contextual: 0
+  custom_cart: 0
   datetime: 0
   dblog: 0
   devel: 0

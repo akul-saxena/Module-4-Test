@@ -1,0 +1,28 @@
+<?php
+
+use Drupal\Core\Entity\EntityInterface;
+use Drupal\Core\Entity\Display\EntityViewDisplayInterface;
+
+/**
+ * Implements hook_entity_view_alter() to add a Buy Now button.
+ */
+function buy_now_entity_view_alter(array &$build, EntityInterface $entity, EntityViewDisplayInterface $display) {
+  // Check if it's a 'product' content type node.
+  if ($entity->getEntityTypeId() == 'node' && $entity->bundle() == 'product') {
+    $node_id = $entity->id();
+    // Build the URL to the thank you page.
+    $url = \Drupal\Core\Url::fromRoute('buy_now.thank_you', ['node' => $node_id]);
+    // Create a link render array for the Buy Now button.
+    $link = [
+      '#type' => 'link',
+      '#title' => \Drupal::translation()->translate('Buy Now'),
+      '#url' => $url,
+      '#attributes' => ['class' => ['button', 'buy-now-button']],
+    ];
+    // Add the link to the product's render array.
+    $build['buy_this_link'] = [
+      '#markup' => \Drupal::service('renderer')->render($link),
+      '#weight' => 10,
+    ];
+  }
+}

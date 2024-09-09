@@ -1,0 +1,5 @@
+name: 'Buy Now Module'
+type: module
+description: 'Adds a Buy Now button to product pages and redirects to a thank you page.'
+core_version_requirement: ^10
+package: Custom

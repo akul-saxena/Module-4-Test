@@ -1,0 +1,13 @@
+<?php
+
+use Drupal\Core\Form\FormStateInterface;
+
+/**
+ * Implements hook_preprocess_HOOK() for node templates.
+ */
+function custom_cart_preprocess_node(&$variables) {
+  if ($variables['node']->bundle() == 'product') {
+    // Attach the custom form to the node content.
+    $variables['content']['custom_cart_form'] = \Drupal::formBuilder()->getForm('Drupal\custom_cart\Form\CustomCartForm');
+  }
+}

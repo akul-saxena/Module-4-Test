@@ -1,0 +1,7 @@
+buy_now.thank_you:
+  path: '/product/{node}/thank-you'
+  defaults:
+    _controller: '\Drupal\buy_now\Controller\BuyProductController::thankYouPage'
+    _title: 'Thank You'
+  requirements:
+    _permission: 'access buy now page'
